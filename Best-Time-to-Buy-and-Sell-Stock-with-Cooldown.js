@@ -12,7 +12,7 @@ var maxProfit = function(prices) {
   let day1 = 1;
 
   if(lastDay === 2){ //We have to buy and sel the next day, or not buy at all
-    if(prices[day0] > prices[day1]){
+    if(prices[day1] > prices[day0]){
       return prices[day1] - prices[day0];
     }
     else{ //prices[0] < prices[1], so we don't buy
@@ -38,5 +38,5 @@ var maxProfit = function(prices) {
 };
 
 console.log(maxProfit([1,2,3,0,2]))
-
+console.log(maxProfit([1,2]))
 //console.log(maxProfit([7,2,5,1,6,4]))
